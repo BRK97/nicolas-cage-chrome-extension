@@ -1,0 +1,19 @@
+{
+    "manifest_version": 2,
+    "name":"Nicolas Cage Extension",
+    "description":"Change images, headlines and more to nicolas cage!",
+    "version":"0.1.0",
+    "permissions": ["storage"],
+    "content_scripts": [
+        {
+            "matches": ["*://*/*"],
+            "js": ["Content.js"]
+        }
+    ],
+    "browser_action":{
+        "default_popup": "Popup.html",
+        "default_title": "Nicolas Cage <3"
+    }
+    
+
+}
